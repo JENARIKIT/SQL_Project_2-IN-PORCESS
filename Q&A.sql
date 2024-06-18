@@ -1,5 +1,6 @@
 -- Q.1 The quantity of noodle flour sold in 2023
 
+````sql
 SELECT 
 	Group_Product,
 	strftime('%Y-%m',Posting_Date) AS MonthID,
@@ -8,6 +9,7 @@ From Sale_Order_Batch
 WHERE Group_Product = "NOODLE FLOUR"
 AND MonthID like '2023%'
 Group by MonthID ;
+````
 
 🟣**Results:**
 
@@ -29,7 +31,8 @@ Group by MonthID ;
 
 
 --Q.2 Top 10 customers with the most Products purchases in 2022
-	
+
+````sql
 SELECT 
 	SL.Company_name,
 	strftime('%Y',SB.Posting_Date) AS YEAR,
@@ -40,6 +43,7 @@ AND YEAR like '%2022%'
 GROUP BY SL.Company_name
 ORDER BY SUM_Quantity DESC
 Limit 10; 
+````
 
 🟣**Results:**
 	
@@ -58,6 +62,8 @@ Limit 10;
 
 
 --Q3. Cost price, selling price, and profit in 2023
+
+````sql
 SELECT 
 	RM.MonthID,
 	Round(SUM(RM.Quantity),2) AS Quantity_RM ,
@@ -94,6 +100,7 @@ FROM
 WHERE RM.PO = FG.PO
 AND RM.MonthID Like '%2023%'
 GROUP by RM.MonthID;
+````
 
 🟣**Results:**
 
@@ -115,6 +122,8 @@ GROUP by RM.MonthID;
 
 
 --Q.4 Traceability inspection of product lot 230621 for food products
+
+````sql
 SELECT
  PKGR.PO AS PO_Packing,
  PKGR.MonthID,
@@ -221,6 +230,7 @@ AND Lot_Packing Like '230621'
 AND Type Like 'Food'
 GROUP by PKGR.PO,PKGR.Lot,PDGR.PO
 ORDER by PKGR.PO,PDGR.PO,PKGI.Batch;
+````
 
 🟣**Results:**
 
@@ -246,11 +256,13 @@ ORDER by PKGR.PO,PDGR.PO,PKGI.Batch;
 
 
 --Q.5 How many SKUs of bread are there?
-	
+
+````sql	
 SELECT 
 	Material_Name
 FROM Material_list
 WHERE Material_Name Like '%BREAD FlOUR%'
+````
 
 🟣**Results:**
 	
@@ -281,6 +293,8 @@ WHERE Material_Name Like '%BREAD FlOUR%'
 
 
 --Q.6 Monthly sales of each type of flour in 2022
+
+````sql
 SELECT 
  (CASE
 		WHEN ML.Material_Name Like '%BREAD%' THEN 'BREAD FLOUR'
@@ -306,6 +320,7 @@ SELECT
 	AND ML.Material_Name NOT like '%MIX%' 
 	AND MonthID Like '2022%'
 	GROUP by Type_FLOUR , MonthID ;
+````
 
 
 🟣**Results:**
@@ -384,6 +399,8 @@ SELECT
 
 	
 --Q.7 What type of flour has sold best between 2021 and 2023
+
+````sql
 SELECT 
  (CASE
 		WHEN ML.Material_Name Like '%BREAD%' THEN 'BREAD FLOUR'
@@ -409,6 +426,7 @@ SELECT
 	AND ML.Material_Name NOT like '%MIX%' 
 	AND MonthID Not like '2024'
 	GROUP by Type_FLOUR , MonthID ;
+````
 
 
 🟣**Results:**
