@@ -1,4 +1,4 @@
-## 🟠 **Q1.** List the total amount of Raw Material used in 2023 
+## 🟠 **Q.1** The quantity of noodle flour sold in 2023
 
 ````sql
 SELECT 
@@ -12,6 +12,9 @@ Group by MonthID ;
 ````
 
 🟣**Results:**
+
+<details>
+  <summary>Click to expand results!</summary>
 
 | Materialdescription   | MonthID   |   SUM_Quantity  |
 |:----------------------|:----------|---------------: |
@@ -28,9 +31,9 @@ Group by MonthID ;
 | NOODLE FLOUR          | 2023-11   |        552645   |
 | NOODLE FLOUR          | 2023-12   |        417735   |
 
+</details>
 
-
---Q.2 Top 10 customers with the most Products purchases in 2022
+## 🟠 **Q.2** Top 10 customers with the most Products purchases in 2022
 
 ````sql
 SELECT 
@@ -46,6 +49,9 @@ Limit 10;
 ````
 
 🟣**Results:**
+
+<details>
+  <summary>Click to expand results!</summary>
 	
 | Company_name |   YEAR |   SUM_Quantity    |
 |:-------------|-------:|-----------------: |
@@ -60,8 +66,9 @@ Limit 10;
 | BH_COMPANY   |    2022 |        449100    |
 | CA_COMPANY   |    2022 |        431597.52 |
 
+</details>
 
---Q3. Cost price, selling price, and profit in 2023
+## 🟠 **Q.3** Cost price, selling price, and profit in 2023
 
 ````sql
 SELECT 
@@ -104,6 +111,9 @@ GROUP by RM.MonthID;
 
 🟣**Results:**
 
+<details>
+  <summary>Click to expand results!</summary>
+
 | MonthID | Quantity_RM | Quantity_FG | Diff       | RM_Cost      | FG_Cost      | Profit      |
 |---------|-------------|-------------|------------|--------------|--------------|-------------|
 | 2023-01 | 7657102.25  | 7461143.5   | 195958.75  | 134630890.5  | 137046991.5  | 2416100.97  |
@@ -119,8 +129,9 @@ GROUP by RM.MonthID;
 | 2023-11 | 10499137.76 | 10449469.52 | 49668.24   | 157283391.7  | 165424949.9  | 8141558.17  |
 | 2023-12 | 8477412.02  | 8472340.63  | 5071.39    | 125722161.1  | 132111089.6  | 6388928.51  |
 
+</details>
 
---Q.4 Traceability inspection of product lot 230621 for food products
+## 🟠 **Q.4** Traceability inspection of product lot 230621 for food products
 
 ````sql
 SELECT
@@ -233,6 +244,9 @@ ORDER by PKGR.PO,PDGR.PO,PKGI.Batch;
 
 🟣**Results:**
 
+<details>
+  <summary>Click to expand results!</summary>
+
 | PO_Packing | MonthID | Lot_Packing | Product_NAME         | Type | Quantity_Product | PO_PD | WIP_NAME | Batch_WIP    | Quantity_WIP | RM_Name | LOT_RM | Quantity_RM  |
 |------------|---------|-------------|--------------------  |------|------------------|-------|----------|--------------|--------------|---------|--------|--------------|
 | 3477       | 2023-06 | 230621      | NOODLE FLOUR 10      | FOOD | 6907.5           | 3550  | PL-11    | 230612002A   | 1791         | RM-18   | 230106 | 12659        |
@@ -253,8 +267,9 @@ ORDER by PKGR.PO,PDGR.PO,PKGI.Batch;
 | 3614       | 2023-06 | 230621      | BISCUITS FLOUR 12    | FOOD | 4700             | 3595  | PL-13    | 230620003A   | 293.5        | RM-8    | 230529 | 80540        |
 | 3614       | 2023-06 | 230621      | BISCUITS FLOUR 12    | FOOD | 4700             | 3602  | PL-24    | 230621001A   | 658.5        | RM-7    | 221028 | 89309        |
 
+</details>
 
---Q.5 How many SKUs of bread are there?
+## 🟠 **Q.5** How many SKUs of bread are there?
 
 ````sql	
 SELECT 
@@ -264,6 +279,9 @@ WHERE Material_Name Like '%BREAD FlOUR%'
 ````
 
 🟣**Results:**
+
+<details>
+  <summary>Click to expand results!</summary>
 	
 | Material_Name  |
 |----------------|
@@ -290,8 +308,9 @@ WHERE Material_Name Like '%BREAD FlOUR%'
 | BREAD FLOUR 21 |
 | BREAD FLOUR 22 |
 
+</details>
 
---Q.6 Monthly sales of each type of flour in 2022
+## 🟠 **Q.6** Monthly sales of each type of flour in 2022
 
 ````sql
 SELECT 
@@ -323,6 +342,9 @@ SELECT
 
 
 🟣**Results:**
+
+<details>
+  <summary>Click to expand results!</summary>
 
 
 | Type_FLOUR       | SUM(SB.Quantity_Total) | Type_Product | MonthID  |
@@ -395,9 +417,9 @@ SELECT
 | VITAL FLOUR       | 155675                | VITAL        | 2022-11  |
 | VITAL FLOUR       | 99000                 | VITAL        | 2022-12  |
 
-
+</details>
 	
---Q.7 What type of flour has sold best between 2021 and 2023
+## 🟠 **Q.7** What type of flour has sold best between 2021 to 2023
 
 ````sql
 SELECT 
@@ -430,6 +452,9 @@ SELECT
 
 🟣**Results:**
 
+<details>
+  <summary>Click to expand results!</summary>
+
 | Type_FLOUR       | SUM(SB.Quantity_Total) | Type_Product | MonthID |
 |------------------|------------------------|--------------|---------|
 | ALL PURPOSE FLOUR| 1928637.43             | FOOD         | 2021    |
@@ -451,6 +476,7 @@ SELECT
 | VITAL FLOUR      | 572175                 | VITAL        | 2022    |
 | VITAL FLOUR      | 3250000                | VITAL        | 2023    |
 
+</details>
 
 
 
