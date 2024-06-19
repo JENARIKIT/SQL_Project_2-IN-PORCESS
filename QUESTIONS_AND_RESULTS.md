@@ -1,4 +1,4 @@
-## 🟠 **Q.1** The quantity of noodle flour sold in 2023
+## 🎏 **Q.1** The quantity of noodle flour sold in 2023  🎏
 
 ````sql
 SELECT 
@@ -11,7 +11,7 @@ AND MonthID like '2023%'
 Group by MonthID ;
 ````
 
-🟣**Results:**
+🔻**Results:** 
 
 <details>
   <summary>Click to expand results!</summary>
@@ -33,7 +33,7 @@ Group by MonthID ;
 
 </details>
 
-## 🟠 **Q.2** Top 10 customers with the most Products purchases in 2022
+## 🎏 **Q.2** Top 10 customers with the most Products purchases in 2022 🎏
 
 ````sql
 SELECT 
@@ -48,7 +48,7 @@ ORDER BY SUM_Quantity DESC
 Limit 10; 
 ````
 
-🟣**Results:**
+🔻**Results:**
 
 <details>
   <summary>Click to expand results!</summary>
@@ -68,7 +68,7 @@ Limit 10;
 
 </details>
 
-## 🟠 **Q.3** Cost price, selling price, and profit in 2023
+## 🎏 **Q.3** Cost price, selling price, and profit in 2023 🎏
 
 ````sql
 SELECT 
@@ -109,7 +109,7 @@ AND RM.MonthID Like '%2023%'
 GROUP by RM.MonthID;
 ````
 
-🟣**Results:**
+🔻**Results:**
 
 <details>
   <summary>Click to expand results!</summary>
@@ -131,7 +131,7 @@ GROUP by RM.MonthID;
 
 </details>
 
-## 🟠 **Q.4** Traceability inspection of product lot 230621 for food products
+## 🎏 **Q.4** Traceability inspection of product lot 230621 for food products 🎏
 
 ````sql
 SELECT
@@ -242,7 +242,7 @@ GROUP by PKGR.PO,PKGR.Lot,PDGR.PO
 ORDER by PKGR.PO,PDGR.PO,PKGI.Batch;
 ````
 
-🟣**Results:**
+🔻**Results:**
 
 <details>
   <summary>Click to expand results!</summary>
@@ -269,7 +269,7 @@ ORDER by PKGR.PO,PDGR.PO,PKGI.Batch;
 
 </details>
 
-## 🟠 **Q.5** How many SKUs of bread are there?
+## 🎏 **Q.5** How many SKUs of bread are there? 🎏
 
 ````sql	
 SELECT 
@@ -278,7 +278,7 @@ FROM Material_list
 WHERE Material_Name Like '%BREAD FlOUR%'
 ````
 
-🟣**Results:**
+🔻**Results:**
 
 <details>
   <summary>Click to expand results!</summary>
@@ -310,7 +310,7 @@ WHERE Material_Name Like '%BREAD FlOUR%'
 
 </details>
 
-## 🟠 **Q.6** Monthly sales of each type of flour in 2022
+## 🎏 **Q.6** Monthly sales of each type of flour in 2022 🎏
 
 ````sql
 SELECT 
@@ -341,7 +341,7 @@ SELECT
 ````
 
 
-🟣**Results:**
+🔻**Results:**
 
 <details>
   <summary>Click to expand results!</summary>
@@ -419,7 +419,7 @@ SELECT
 
 </details>
 	
-## 🟠 **Q.7** What type of flour has sold best between 2021 to 2023
+## 🎏 **Q.7** What type of flour has sold best between 2021 to 2023 🎏
 
 ````sql
 SELECT 
@@ -450,7 +450,7 @@ SELECT
 ````
 
 
-🟣**Results:**
+🔻**Results:**
 
 <details>
   <summary>Click to expand results!</summary>
