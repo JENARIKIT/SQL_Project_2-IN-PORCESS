@@ -181,6 +181,13 @@ GROUP by RM.MonthID;
 
 </details>
 
+<pre>
+Summary of Cost Price, Selling Price, and Profit for 2023
+Total Raw Material Cost   :  1,801,702,837.20
+Total Finished Goods Cost : 1,965,710,962.90
+Total Profit		  : 164,008,125.68
+</pre>
+
 ## 🎏 **Q.4** Traceability inspection of product lot 230621 for food products 🎏
 
 ````sql
@@ -319,6 +326,32 @@ ORDER by PKGR.PO,PDGR.PO,PKGI.Batch;
 
 </details>
 
+<pre>
+	
+Product Details: Identify the products associated with lot 230621.
+
+NOODLE FLOUR 10
+BISCUITS FLOUR 6
+NOODLE FLOUR 6
+NOODLE FLOUR 9
+ALL PURPOSE FLOUR 31
+BISCUITS FLOUR 12
+
+
+Quantity Produced: Sum up the quantities of the final products.
+
+NOODLE FLOUR 10	     : 6907.5 
+BISCUITS FLOUR 6     : 23062.5
+NOODLE FLOUR 6	     : 11250 
+NOODLE FLOUR 9	     : 11587.5 
+ALL PURPOSE FLOUR 31 : 29340 
+BISCUITS FLOUR 12    : 4700 
+
+</pre>
+
+
+
+
 ## 🎏 **Q.5** How many SKUs of bread are there? 🎏
 
 ````sql	
@@ -359,6 +392,10 @@ WHERE Material_Name Like '%BREAD FlOUR%'
 | BREAD FLOUR 22 |
 
 </details>
+
+<pre>
+ There are 22 SKUs of bread.
+ </pre>
 
 ## 🎏 **Q.6** Monthly sales of each type of flour in 2022 🎏
 
@@ -468,6 +505,45 @@ SELECT
 | VITAL FLOUR       | 99000                 | VITAL        | 2022-12  |
 
 </details>
+
+ <pre>
+	 
+The provided table summarizes the monthly sales quantities for each type of flour in 2022. Here's the breakdown for each month and each type of flour:
+
+All Purpose Flour Sales:		Biscuits Flour Sales:			Bread Flour Sales:
+January	  : 237,700			January	  : 39,847.5			January    : 224,930.01
+February  : 178,707.5			February  : 96,437.5			February   : 359,352.5
+March     : 293,785			March	  : 203,978.5			March      : 240,807.5	
+April     : 114,362.5			April	  : 170,222.5			April	   : 112,792.51
+May	  : 206,930			May	  : 365,810			May	   : 374,667.5
+June      : 326,052.5			June	  : 451,045			June	   : 460,770
+July      : 321,457.5			July	  : 776,365			July	   : 315,285
+August    : 390,857.5			August	  : 803,297.5			August	   : 314,597.5
+September : 419,512.5			September : 948,860			September  : 385,497.5
+October   : 544,602.5			October   : 734,767.5			October	   : 380,160
+November  : 565,427.5			November  : 785,320			November   : 507,485
+December  : 325,702.5			December  : 545,992.5			December   : 265,572.5
+	 
+
+
+Noodle Flour Sales:			Pizza Flour Sales:	  		Vital Flour Sales:
+January   : 617,400			January   : 29,925			January	    : 30,000
+February  : 490,275			February  : 20,475			February    : 3,000
+March	  : 597,060			March     : 15,750			March	    : 0
+April     : 214,560			April     : 17,325			April	    : 1,500		
+May	  : 275,400			May       : 19,575			May	    : 192,000
+June      : 382,005			June	  : 23,625			June	    : 0
+July      : 371,137.5			July      : 34,650			July	    : 0
+August    : 290,992.5			August    : 34,875			August	    : 0
+September : 420,075			September : 29,925			September   : 0
+October   : 481,500			October   : 23,625			October     : 91,000
+November  : 580,717.5			November  : 28,800			November    : 155,675
+December  : 411,120			December  : 21,600			December    : 99,000
+	 
+
+ </pre>
+
+ 
 	
 ## 🎏 **Q.7** What type of flour has sold best between 2021 to 2023 🎏
 
