@@ -604,6 +604,10 @@ SELECT
 
 </details>
 
+ <pre>
+	 
+2021: Best selling flour was NOODLE FLOUR.
+2022: Best selling flour was BISCUITS FLOUR.
+2023: Best selling flour was NOODLE FLOUR.
 
-
-
+ </pre>
