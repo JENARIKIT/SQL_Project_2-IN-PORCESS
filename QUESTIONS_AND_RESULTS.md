@@ -61,6 +61,19 @@ Group by MonthID ;
 
 </details>
 
+
+To find the total quantity of noodle flour sold in 2023, we can sum up the quantities listed for each month. Here's the calculation:
+
+Adding these together gives us the total quantity sold in 2023:
+<pre>
+296,910 + 297,832.5 + 484,042.4 + 388,777.5 + 621,855 + 479,295 + 526,815 + 576,967.5 + 578,317.5 + 541,890 + 552,645 + 417,735  <br>
+</pre>
+Let's calculate the sum:  <br>
+<pre>
+5,762,082.4  <br>
+</pre>
+So, the total quantity of noodle flour sold in 2023 is 5,762,082.4 
+
 ## 🎏 **Q.2** Top 10 customers with the most Products purchases in 2022 🎏
 
 ````sql
