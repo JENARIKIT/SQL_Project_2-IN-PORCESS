@@ -1,7 +1,7 @@
 # <p align="center"> Wheat Flour Data Analysis
 
 
-# <p align="center">![pic](https://thumbs.dreamstime.com/b/wheat-products-dark-wooden-background-bread-spaghetti-wheat-flour-flakes-loaf-dryings-carbohydrates-wheat-products-173716912.jpg)</p>
+# <p align="center">![pic](https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2020_22/1574082/whole-grain-bread-te-main2-200528.jpg)</p>
 ## The report presents an analysis of various values derived from wheat flour production 
 
  🚩 Sales revenue  <br> 
